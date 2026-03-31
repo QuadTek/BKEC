@@ -8,8 +8,8 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
         self.wfile.write(json.dumps({
-            'projectsCompleted': 150,
-            'clientsSatisfied': 85,
-            'industriesServed': 6,
-            'yearsExperience': 5
+            'projectsCompleted': 20,
+            'clientsSatisfied': 15,
+            'industriesServed': 5,
+            'yearsExperience': 2
         }).encode())
