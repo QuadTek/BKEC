@@ -267,7 +267,7 @@ const Home = () => {
 
       {/* Stats Section */}
       <section className="stats-section">
-        <div className="container"> <p>Our Impact</p>
+        <div className="container">
           <div className="stats-grid">
             <div className="stat-card">
               <div className="stat-number">{stats.projectsCompleted}+</div>
