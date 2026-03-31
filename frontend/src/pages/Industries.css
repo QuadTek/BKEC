@@ -1,0 +1,162 @@
+.industries-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.industries-intro h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.industries-intro p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.industries-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.industry-detail-section {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.industry-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--bg-light);
+}
+
+.industry-detail-icon {
+  font-size: 4rem;
+  flex-shrink: 0;
+}
+
+.industry-detail-header h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.industry-detail-header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.industry-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.industry-detail-col h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.industry-detail-col ul {
+  list-style: none;
+}
+
+.industry-detail-col li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.industry-detail-col li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.cross-industry-section {
+  background: var(--bg-light);
+}
+
+.innovation-card {
+  text-align: center;
+}
+
+.innovation-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.innovation-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .industries-intro h2 {
+    font-size: 1.75rem;
+  }
+
+  .industry-detail-section {
+    padding: 30px 20px;
+  }
+
+  .industry-detail-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .industry-detail-icon {
+    font-size: 3rem;
+  }
+
+  .industry-detail-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .industry-detail-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .industries-intro p {
+    font-size: 1rem;
+  }
+
+  .industry-detail-section {
+    padding: 25px 15px;
+  }
+
+  .industry-detail-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .industry-detail-header p {
+    font-size: 1rem;
+  }
+
+  .industry-detail-col h3 {
+    font-size: 1.2rem;
+  }
+}
