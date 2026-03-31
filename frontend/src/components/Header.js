@@ -19,14 +19,25 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  // const navLinks = [
+  //   { path: '/', label: 'Home' },
+  //   { path: '/services', label: 'Services' },
+  //   { path: '/solutions', label: 'Solutions' },
+  //   { path: '/industries', label: 'Industries' },
+  //   { path: '/insights', label: 'Insights' },
+  //   { path: '/about', label: 'About Us' },
+  //   { path: '/careers', label: 'Careers' },
+  //   { path: '/contact', label: 'Contact Us' }
+  // ];
+
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/services', label: 'Services' },
     { path: '/solutions', label: 'Solutions' },
+    { path: '/services', label: 'Services' },
     { path: '/industries', label: 'Industries' },
-    { path: '/insights', label: 'Insights' },
+    { path: '/insights', label: 'Projects' },
     { path: '/about', label: 'About Us' },
-    { path: '/careers', label: 'Careers' },
+    // { path: '/careers', label: 'Careers' },
     { path: '/contact', label: 'Contact Us' }
   ];
 
